@@ -4,7 +4,6 @@
 This repository documents a research project focused on **embedded systems security and aerospace communications**. The primary goal is to design, construct, and audit a **FlatSat** (a satellite bus deployed on a test bench) to analyze vulnerabilities in low-power telemetry links and develop robust security countermeasures.
 
 
-
 ## System Architecture
 The system simulates a distributed satellite environment:
 - **Space Segment (Payload):** Arduino Nano, DHT22 sensor (telemetry), and HC-12 transceiver.
@@ -23,3 +22,14 @@ The system simulates a distributed satellite environment:
 ├── /src           # Source code (C++ for Arduino, Python for Raspberry Pi).
 ├── /images        # Flowcharts, wiring diagrams, and setup photography.
 └── README.md      # Main documentation.
+
+**Tech Stack**
+-Hardware: Raspberry Pi 4, Arduino Nano, HC-12 (433MHz), RTL-SDR v4, HackRF One.
+-Software: Python 3, C++ (Arduino IDE), GNU Radio, SDR++.
+
+**Research Objectives**
+-Analyze the inherent vulnerabilities of unencrypted, non-authenticated telemetry protocols.
+-Implement security techniques tailored for resource-constrained embedded systems.
+-Contribute to the aerospace cybersecurity knowledge base within the Polish aerospace ecosystem.
+
+**Project currently in development as part of a professional training path in Aerospace Cybersecurity.**
