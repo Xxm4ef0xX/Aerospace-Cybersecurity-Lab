@@ -5,7 +5,7 @@ import requests
 import base64
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad
-from confirg import API_KEY # Importamos la clave desde tu archivo config
+from config import API_KEY # Importamos la clave desde tu archivo config
 
 # Inicialización
 dhtDevice = adafruit_dht.DHT22(board.D4)
