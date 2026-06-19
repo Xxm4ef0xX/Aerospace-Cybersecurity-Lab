@@ -1,3 +1,5 @@
+// FlatSat Telemetry Transmitter - Operated on Channel 20 (Configured via config_channel.ino)
+
 #include <SoftwareSerial.h>
 #include <DHT.h>
 
