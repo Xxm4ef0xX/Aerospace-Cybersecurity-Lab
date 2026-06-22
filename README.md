@@ -22,7 +22,7 @@ Credential Management: Sensitive API keys are isolated in a local config.py file
 - [X] Phase 2: Telemetry Link. Implementation of UART serial protocols for robust data transmission.
 - [X] Phase 3: RF Auditing. Signal analysis in the 433MHz band using SDR to detect information leakage. (Optimization: Channel 20 established).
 - [X] Phase 4: Resilience & Defense. Implementation of persistent data logging (SQLite) and investigation of common attacks.
-- [ ] Phase 5: Encryption & Advanced Security. Implementation of AES-128 and traffic obfuscation techniques.
+- [X] Phase 5: Encryption & Advanced Security. Implementation of AES-128 and traffic obfuscation techniques. *Details: Achieved successful E2E encrypted telemetry link between Arduino (Node) and RPi (OBC) using HC-12 transceivers on Channel 020.
 
 ## Repository Structure
 ```text
@@ -40,6 +40,15 @@ Credential Management: Sensitive API keys are isolated in a local config.py file
 -Implement security techniques tailored for resource-constrained embedded systems.
 -Contribute to the aerospace cybersecurity knowledge base within the Polish aerospace ecosystem.
 
+## Implementation Notes: Phase 5
+- **Channel Configuration:** Both HC-12 modules must be synced to **Channel 020** using the `AT+C020` command.
+- **Wiring (Crucial):** - Ensure the **TX** pin of the HC-12 is connected to the **RX** pin of the Raspberry Pi (GPIO 15 / Pin 10).
+  - Ensure the **RX** pin of the HC-12 is connected to the **TX** pin of the Raspberry Pi (GPIO 14 / Pin 8).
+  - A common GND between the Arduino and Raspberry Pi is mandatory for signal stability.
+
 **Project currently in development as part of a professional training path in Aerospace Cybersecurity.**
 
 **For detailed technical documentation and lab setup, see the /docs directory.**
+
+### Security Disclaimer
+The `KEY` used in the Phase 5 implementation is for laboratory demonstration purposes only. In a production aerospace environment, symmetric keys should be injected using a Hardware Security Module (HSM) or a secure key management system rather than being hardcoded in the source files.
