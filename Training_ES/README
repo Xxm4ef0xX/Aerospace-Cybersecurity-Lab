@@ -1,0 +1,58 @@
+# Curso interactivo · Seguridad de infraestructura satelital
+
+Aplicación web autocontenida (un solo archivo `index.html`) para estudiar
+seguridad satelital con enfoque de análisis de amenazas y defensa. Funciona en
+teléfono, tablet o computadora y guarda tu progreso en el propio dispositivo.
+
+**Contenido:** 11 módulos · 39 lecciones · casos de estudio con cadena de ataque
+conceptual · quizzes de autoevaluación.
+
+- Fundamentos
+- Órbitas y dinámica
+- RF y SATCOM
+- Segmento espacial
+- SIGINT y SDR
+- Casos: cadena de ataque
+- Terrestre y protocolos
+- Amenazas de capa física
+- Criptografía de enlace
+- Marcos de defensa
+- Evaluación final (CTF)
+
+---
+
+## Publicar en GitHub Pages (URL gratuita, accesible desde cualquier dispositivo)
+
+1. Crea una cuenta en https://github.com si no tienes una.
+2. Crea un repositorio nuevo (botón **New**). Ponle un nombre, por ejemplo
+   `curso-satelites`. Márcalo como **Public**.
+3. En el repositorio, pulsa **Add file → Upload files** y arrastra el archivo
+   `index.html` (y opcionalmente este `README.md`). Confirma con **Commit changes**.
+4. Ve a **Settings → Pages**.
+5. En **Source**, elige la rama `main` y la carpeta `/ (root)`. Pulsa **Save**.
+6. Espera 1–2 minutos. GitHub te mostrará la URL pública, con el formato:
+   `https://TU-USUARIO.github.io/curso-satelites/`
+7. Abre esa URL desde cualquier dispositivo. Puedes guardarla como marcador o,
+   en el móvil, "Añadir a pantalla de inicio" para usarla como una app.
+
+El archivo debe llamarse `index.html` para que GitHub Pages lo cargue por defecto.
+
+---
+
+## Alternativas sin cuenta de GitHub
+
+- **Netlify Drop** (https://app.netlify.com/drop): arrastra el archivo y te da
+  una URL al instante.
+- **Cloudflare Pages** o **Vercel**: mismo principio, hosting estático gratuito.
+- **Uso local:** también puedes abrir `index.html` directamente en el navegador
+  (doble clic) sin internet. Las fuentes se cargan online, pero el curso funciona
+  sin ellas.
+
+---
+
+## Notas
+
+- El progreso se guarda **por dispositivo y navegador** (almacenamiento local); no
+  se sincroniza automáticamente entre dispositivos.
+- Todo el material es de nivel introductorio y está orientado a detección,
+  defensa y modelado de amenazas. No incluye procedimientos de explotación.
